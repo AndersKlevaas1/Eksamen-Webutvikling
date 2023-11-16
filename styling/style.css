@@ -1,5 +1,5 @@
 *{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 #gridContainer{
@@ -149,6 +149,59 @@ header a img{
     font-size: 18px;
     font-weight: bold;
 }
+
+/* footer index */
+
+#footerIndex{
+    grid-area: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+#ourServices{
+    text-align: center;
+    margin: auto;
+    max-width: 60%;
+}
+
+#footerHeader{
+    padding: 1rem;
+}
+
+#grayEmail {
+    flex-direction: column;
+    text-align: center;
+    background-color: #ddd;
+}
+
+#emailBox{
+    margin-top: 50px;
+    height: 125px;
+    
+}
+
+#emailForm{
+    gap: 0;
+}
+
+#email{
+    margin-top: 15px;
+    font-size: 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+#emailBox label{
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+#emailBox button{
+    background-color: #e6bd43;
+    border: none;
+    font-size: 20px;
+}
+
 
 /* Media for desktop */
 @media screen and (min-width: 600px) {
