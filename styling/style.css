@@ -168,9 +168,11 @@ header a img{
     max-width: 60%;
 }
 
-#footerHeader{
+#ourServicesHeader{
+    display: flex;
     padding: 1rem; 
-    text-align: center;
+    justify-content: center;
+
 }
 
 #grayEmail {
@@ -226,14 +228,23 @@ form input{
     display: flex;
     align-items: center;
     justify-content: first baseline;
+    padding-left: 1rem;
+}
+
+#companyRights img {
+    display: flex;
+    max-width: 60%;
+    max-height: 60%;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 .footerIcon{
    display: flex;
    align-items: center;
    justify-content: flex-end;
-   padding: 2rem;
-   gap: 40px;
+   padding: 1rem;
+   gap: 30px;
    font-size: 50px;
 }
 
@@ -291,7 +302,7 @@ form input{
    #ourServices {
     display: flex;
     flex-direction: row;
-    /* gap: 80px; */
+    gap: 40px;
     text-align: center;
     margin: auto;
 
@@ -363,7 +374,23 @@ form input{
         padding-top: 12px;
         padding-bottom: 8px;  
     }
+
+    /* Footer */
+
+    .footerIcon {
+        display: none;
+    }
+
+    #companyRights p {
+        display: none;
+    }
+
+    #companyRights img {
+        display: flex;
+        margin-left: 35%;
+    }
 }
+
 
 @media screen and (min-width: 601px) {
     .videoContainer video {
