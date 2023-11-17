@@ -2,6 +2,12 @@
     font-family: 'Dosis', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1600px;
+}
+
 #gridContainer{
     display: grid;
     grid-template-rows: auto;
@@ -19,7 +25,7 @@ header{
 header a img{
     width: 150px;
     height: 150px;
-    margin-right: 0 auto;
+    margin-right: auto;
     display: block;
 
 }
@@ -69,9 +75,6 @@ header a img{
     position: relative; 
 }
 
-.videoText h1{
-    /* font-size: 20px; */
-}
 
 .videoText {
     position: absolute;
@@ -127,6 +130,7 @@ header a img{
     background-color: #e6bd43;
     flex-direction: column;
     text-align: center;
+    max-width: fit-content;
 }
 
 #aboutCompany p{
@@ -165,13 +169,15 @@ header a img{
 }
 
 #footerHeader{
-    padding: 1rem;
+    padding: 1rem; 
+    text-align: center;
 }
 
 #grayEmail {
     flex-direction: column;
     text-align: center;
     background-color: #ddd;
+    padding: 75px;
 }
 
 #emailBox{
@@ -199,8 +205,41 @@ header a img{
 #emailBox button{
     background-color: #e6bd43;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 7px;
 }
+
+form input{
+    padding: 7px;
+}
+
+#companyRights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #252525;
+    color: white;
+    text-align: center;
+}
+
+#companyRights p {
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+}
+
+.footerIcon{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 2rem;
+   gap: 40px;
+   font-size: 50px;
+}
+
+/* Products */
+
+
 
 
 /* Media for desktop */
@@ -242,6 +281,21 @@ header a img{
         margin: auto;    
         padding: 1rem;
     } 
+
+   .fa-icon {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   } 
+
+   #ourServices {
+    display: flex;
+    flex-direction: row;
+    /* gap: 80px; */
+    text-align: center;
+    margin: auto;
+
+   }
 
 
 }
@@ -297,7 +351,17 @@ header a img{
     }
 
     #subhead p{
-        fontsize: 18px;
+        font-size: 20px;
+    }
+
+    /* Sign up */
+
+    #emailBox button{
+        background-color: #e6bd43;
+        border: none;
+        font-size: 14px;
+        padding-top: 12px;
+        padding-bottom: 8px;  
     }
 }
 
