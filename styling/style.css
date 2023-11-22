@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     max-width: 1600px;
 }
@@ -312,30 +312,46 @@ hr {
 
 #jobBtn {
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    max-width: 110px;
-    flex-direction: column;
-    padding: 1rem;
-    margin-left: 40px;
+    flex-wrap: wrap;
+    max-width: 99%;
+    overflow: hidden;
 }
 
-#jobBtn button {
+#jobBtn li {
+    margin: 10px;
+}
+
+#jobBtn a {
     display: flex;
     background-color: white;
     border: 2px black solid;
     padding: 1rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+#jobBtn a:hover {
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+#jobBtn ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     
 }
 
-#firstRow{
+#developmentBtn {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 1rem;
-    gap: 25px;
-    max-width: 20%;
+    background-color: white;
+    border: 2px black solid;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    max-width: 85px;
+    
 }
-
 
 #productImg img {
     max-width: 70%;
@@ -362,8 +378,8 @@ hr {
     display: flex;
     align-items: center;
     text-align: center;
-    max-width: 50px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 110px;
     margin-top: 40px;
 }
 
@@ -382,18 +398,59 @@ hr {
     grid-area: footer;
     display: flex;
     gap: 30px;
-    font-size: 35px;
+    font-size: 60px;
     text-decoration: none;
+    margin-left: 30px;
+    padding-bottom: 20px;
     /* color: none; */
 }
 
 .fa-solid.fa-arrow-up {
+    position: fixed;
     color: white ;
-    text-decoration: none; 
+    text-decoration: none;
+    top: 770px;
+    right: 20px; 
+    padding: 10px;
+    font-size: 40px;
+    background-color: #252525;
 }
 
 
 /* footer */
+
+
+/* About */
+/* Header */
+
+#AboutsHeader {
+    position: relative;
+}
+
+#AboutsHeader img {
+    width: 100%; /* Bruk hele bredden av containeren */
+    height: auto; /* Automatisk høyde for å opprettholde proporsjoner */
+}
+
+#companyName,
+.overlayText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Farge på teksten, endre etter behov */
+}
+
+#companyName {
+    top: 50%;
+}
+
+.overlayText {
+    top: 70%; /* Juster vertikal plassering av overlay-teksten */
+    max-width: 80%; /* Begrens bredden av overlay-teksten om nødvendig */
+}
+
+
+
 
 
 /* Media for desktop */
@@ -404,7 +461,6 @@ hr {
     }
 
     #indexHeader{
-        /* justify-content: center; */
         grid-column: 1 / 4;
     }
 
@@ -529,24 +585,14 @@ hr {
     margin-left: 20px;
     }
 
-    #jobBtn  {
-        display: flex;
-        flex-direction: row;
+    #jobBtn {
+        flex-wrap: nowrap; 
+        align-items: center;
     }
 
-    #firstRow {
-        display: flex;
-        flex-direction: row;
-        max-width: 100px;
-        justify-content: space-between;
+    #jobBtn li {
+        width: auto; 
     }
-
-    #developmentButton {
-        margin-left: 110px;
-        padding: 0rem;
-        display: block;
-    }
-
     
     #productHeader img {
         width: 100%;
@@ -554,7 +600,10 @@ hr {
         object-fit: cover; 
     }
     
-    #productImg img:hover {
+    
+    #brandingImg :hover,
+    #designImg :hover,
+    #developmentImg :hover{
         transform: scale(1.05); 
         transition: transform 0.3s ease; 
     }
@@ -579,6 +628,7 @@ hr {
         margin-right: 10px;
     }
 
+
     #bilde1 {
         display: flex;
         flex-direction: column;
@@ -586,8 +636,19 @@ hr {
         margin-bottom: 10px;
     }
 
+    #bigPicture :hover{
+        transform: scale(1.05); 
+        transition: transform 0.3s ease; 
+    }
+
     .footerIconProducts {
-        margin-right: 20px;
+        margin-top: 20px;
+        margin-right: 70px;
+    }
+
+    .fa-solid.fa-arrow-up {
+        right: 25px;
+        top: 710px;
     }
 
 }
@@ -648,4 +709,5 @@ hr {
         display: flex;
         margin-left: 35%;
     }
+    
 }
