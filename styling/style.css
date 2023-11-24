@@ -339,6 +339,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    margin-right: 120px;
     
 }
 
@@ -409,7 +410,7 @@ hr {
     position: fixed;
     color: white ;
     text-decoration: none;
-    top: 770px;
+    top: 840px;
     right: 20px; 
     padding: 10px;
     font-size: 40px;
@@ -647,8 +648,8 @@ hr {
     }
 
     .fa-solid.fa-arrow-up {
-        right: 25px;
-        top: 710px;
+        right: 180px;
+        top: 920px;
     }
 
 }
