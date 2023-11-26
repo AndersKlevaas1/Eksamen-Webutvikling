@@ -426,29 +426,72 @@ hr {
 
 #AboutsHeader {
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-#AboutsHeader img {
-    width: 100%; /* Bruk hele bredden av containeren */
-    height: auto; /* Automatisk høyde for å opprettholde proporsjoner */
+.textOverlay {
+    width: 70%;
 }
 
-#companyName,
 .overlayText {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white; /* Farge på teksten, endre etter behov */
+    background: rgb(245, 245, 245, 0.8);
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #companyName {
-    top: 50%;
+    color: #000000;
+    font-size: 18px; 
+    font-weight: lighter; 
+    margin-bottom: 10px;
+    text-align: left;    
 }
 
-.overlayText {
-    top: 70%; /* Juster vertikal plassering av overlay-teksten */
-    max-width: 80%; /* Begrens bredden av overlay-teksten om nødvendig */
+#companyDescription {
+    color: #000000;
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 60%;
 }
+
+.overlayText p {
+    font-size: 1em; 
+    margin-bottom: 0; 
+}
+
+.contactButton {
+    display: inline-block;
+    background-color: #e6bd43;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 100px;
+    text-align: left;
+}
+
+
+
+
 
 
 
@@ -710,5 +753,7 @@ hr {
         display: flex;
         margin-left: 35%;
     }
+
+    
     
 }
