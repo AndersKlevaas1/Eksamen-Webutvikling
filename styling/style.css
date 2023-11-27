@@ -10,7 +10,8 @@ body {
 
 #gridContainer {
     display: grid;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; 
+
 }
 
 
@@ -223,44 +224,14 @@ form input{
 }
 /* footer index */
 
-#footerIndex{
+#footer{
     grid-area: footer;
     display: flex;
     flex-direction: column;
 }
 
 
-#companyRightsIndex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #252525;
-    color: white;
-    text-align: center;
-}
 
-#companyRightsIndex p {
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-}
-
-#companyRightsIndex img {
-    display: flex;
-    max-width: 60%;
-    max-height: 60%;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-.footerIconIndex{
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   padding: 1rem;
-   gap: 30px;
-   font-size: 50px;
-}
 
 /* Products */
 /* Header */
@@ -359,8 +330,9 @@ hr {
     margin-left: 50px;
 }
 
+/* footer */
 
-#companyRightsProducts{
+#companyRights{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -370,12 +342,12 @@ hr {
     align-items: center;
 }
 
-#companyRightsProducts p {
+#companyRights p {
     display: flex;
     align-items: center;
 }
 
-#companyRightsProducts img {
+#companyRights img {
     display: flex;
     align-items: center;
     text-align: center;
@@ -385,50 +357,45 @@ hr {
 }
 
 
-#footerProducts{
+#footer{
     grid-area: footer;
     display: flex;
     flex-direction: column;
 }
 
-#footerProducts p {
+#footer p {
     flex-direction: column;
 }
 
-.footerIconProducts {
+.footerIcon {
     grid-area: footer;
     display: flex;
     gap: 30px;
-    font-size: 60px;
+    font-size: 40px;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 10px;
     padding-bottom: 20px;
-    /* color: none; */
 }
 
-.fa-solid.fa-arrow-up {
+#arrow-up {
     position: fixed;
+    bottom: 15px;
+    right: 16px;
     color: white ;
     text-decoration: none;
-    top: 840px;
-    right: 20px; 
     padding: 10px;
     font-size: 40px;
     background-color: #252525;
 }
 
-
-/* footer */
-
-
 /* About */
 /* Header */
 
 #AboutsHeader {
+    grid-area: header;
     position: relative;
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
     min-height: 80vh;
     background-size: cover;
     background-position: center;
@@ -436,14 +403,16 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url("../img/image17002315350.jpg");
 }
+
 
 .textOverlay {
     width: 70%;
 }
 
 .overlayText {
-    background: rgb(245, 245, 245, 0.8);
+    background: rgba(245, 245, 245, 0.9);
     color: #000000;
     padding: 20px;
     box-sizing: border-box;
@@ -481,7 +450,7 @@ hr {
     color: #000000;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
     margin-top: 20px;
@@ -489,10 +458,149 @@ hr {
     text-align: left;
 }
 
+.contactButton:hover {
+    color: rgb(27, 27, 27);
+    background-color: #e6bd4381;
+}
+
+/* Main */
+
+#aboutMain {
+    grid-area: main;
+
+}
+
+#clients {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6bd43;
+    align-items: center;
+    padding: 2rem;
+}
+
+#clientsLogo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#clientsLogo img{
+    margin: 9px;
+}
+
+#contact-Us h2, h3, label, input, textarea {
+    margin-left: 40px;
+}
+
+#contact-Us h2{
+    text-align: center;
+}
+
+#contact-Us {
+background-color: #dadada;
+}
+
+#contact-Us form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+form input, textarea {
+    border: none;
+    padding: 15px;
+}
+
+#message {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 15px;
+}
+
+#user-name {
+    margin-top: 0px;
+}
+
+#submit {
+    display: flex;
+    align-items: flex-start;
+    max-width: 110px;
+    background-color: #e6bd43;
+    color: black;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#submit:hover{
+    color: rgb(27, 27, 27);
+    background-color: #e6bd4381;
+}
+
+#contactInformation {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactInformation span {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#bra-veien {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#bra-veien i {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #606060;
+}
+
+#bra-veien span {
+    margin-left: 5px;
+}
+
+#telephone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#telephone i {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #606060;
+}
+
+#emailInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#emailInfo i {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #606060;
+}
+
+/* Footer */
 
 
 
-
+#aboutFooter {
+    grid-area: footer;
+}
 
 
 
@@ -529,6 +637,18 @@ hr {
     }
 
     #footerProducts {
+        grid-column: 1 / 4;
+    }
+
+    #aboutHeader {
+        grid-column: 1 / 4;
+    }
+
+    #aboutMain {
+        grid-column: 1 / 4;
+    }
+
+    #aboutFooter {
         grid-column: 1 / 4;
     }
 
@@ -609,7 +729,7 @@ hr {
     font-size: 40px;
    } 
 
-   #companyRightsProducts{
+   #companyRights{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -619,7 +739,7 @@ hr {
     align-items: center;
     }
 
-    #companyRightsProducts img {
+    #companyRights img {
     display: flex;
     align-items: center;
     text-align: center;
@@ -685,14 +805,34 @@ hr {
         transition: transform 0.3s ease; 
     }
 
-    .footerIconProducts {
+    .footerIcon{
         margin-top: 20px;
-        margin-right: 70px;
+        margin-right: 80px;
+        font-size: 60px;
     }
 
     .fa-solid.fa-arrow-up {
         right: 180px;
         top: 920px;
+    }
+
+    /* About */
+
+    .overlayText {
+        float: right;
+        margin-right: 40px;
+    }
+
+    #AboutsHeader{
+        display: flex;
+        justify-content: right;
+        float: right;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        min-height: 60vh;
+        background-size: cover;
+        background-position: center;
     }
 
 }
@@ -751,7 +891,7 @@ hr {
 
     #companyRightsIndex img {
         display: flex;
-        margin-left: 35%;
+        justify-content: center;
     }
 
     
