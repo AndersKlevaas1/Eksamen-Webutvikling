@@ -17,15 +17,15 @@
     <div id="gridContainer">
 
         <header id="aboutHeader">
-            <nav id="navHeader">
-                <a href="index.html">
-                    <img src="img/logo1.png" alt="Logobilde">
+            <nav class="navHeader">
+                <a href="index.html" aria-label="Home">
+                    <img src="img/logo1.png" alt="Logopicture" aria-label="Picture of the websites logo">
                 </a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="about.html">Contact</a></li>
+                    <li><a href="index.html" aria-label="Home">Home</a></li>
+                    <li><a href="products.html" aria-label="Portfolio">Portfolio</a></li>
+                    <li><a href="about.html" aria-label="About" id="underline">About</a></li>
+                    <li><a id="contactNav" href="about.html" aria-label="Contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -100,7 +100,7 @@
         
                 <input id="submit" type="submit" value="Send message">
             </form>
-        </section>
+        
 
     <section id="contactInformation">
         <h2>Contact information</h2>
@@ -118,18 +118,13 @@
                 <section id="emailInfo">
                     <i class="fa-solid fa-envelope"></i> <a href="#"><span>postmottak@hiof.no</span></a>
                 </section>
-
         </section>
-
-
-
-
-
-
-
-
-
+    </section>
+        <section id="googleMaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4094.488428646961!2d11.352610820535114!3d59.12831433853438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1701171478102!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        
+
     </main>
 
     <footer id="footer">
@@ -138,11 +133,17 @@
             <p>Companyrights Companyname 2023</p>
 
             <section class="footerIcon">
-            <i class="fa-brands fa-square-facebook"></i>
-
-            <i class="fa-brands fa-square-instagram"></i>
-
-            <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.facebook.com" class="social-icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                
+                <a href="https://www.instagram.com" class="social-icon">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+        
+                <a href="https://no.linkedin.com/" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
         </section>
         </section>
     </footer>

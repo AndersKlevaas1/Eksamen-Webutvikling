@@ -14,6 +14,12 @@ Transform translate: https://www.w3schools.com/css/css3_2dtransforms.asp
 
 Hover-effekt på bilder: https://codepen.io/nxworld/pen/ZYNOBZ
 
-Style="background-image": https://www.w3schools.com/html/html_images_background.asp
+"background-image": https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
 
 Form - label: https://www.w3schools.com/tags/tag_label.asp / https://www.w3schools.com/tags/tag_textarea.asp
+
+flex-grow: https://www.w3schools.com/cssref/css3_pr_flex-grow.php / https://stackoverflow.com/questions/19574851/how-to-specify-an-element-after-which-to-wrap-in-css-flexbox
+
+text-decoration color: https://www.w3schools.com/cssref/css3_pr_text-decoration-color.php
+
+

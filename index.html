@@ -17,31 +17,31 @@
     <div id="gridContainer">
 
     <header id="indexHeader">
-        <nav id="navHeader">
-            <a href="index.html">
-                <img src="img/logo1.png" alt="Logobilde">
+        <nav class="navHeader">
+            <a href="index.html" aria-label="Home">
+                <img src="img/logo1.png" alt="Logopicture" aria-label="Picture of the websites logo">
             </a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="active" href="about.html">Contact</a></li>
+                <li><a href="index.html" id="underline" aria-label="Home">Home</a></li>
+                <li><a href="products.html" aria-label="Portfolio">Portfolio</a></li>
+                <li><a href="about.html" aria-label="About">About</a></li>
+                <li><a id="contactNav" href="about.html" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
         
         <section id="headline">
             <div class="videoContainer">
-                <img src="img/image17002315350.jpg" alt="bilde av en dame som jobber på pcen">
-                <video autoplay muted loop id="bgVideo">
+                <img src="img/image17002315350.jpg" alt="Picture of a person taken from above using a laptop" aria-label="Picture of a person takien from above, using a computer">
+                <video autoplay muted loop id="bgVideo" aria-label="Looped video of two persons paragliding in the sky">
                     <source src="img/mountains.mp4" type="video/mp4">
                     Din nettleser støtter ikke video.
                 </video>
     
-                <article class="videoText">
+                <div class="videoText">
                     <h1>Compeling Headline</h1>
                     <p>Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis noDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
-                    <button>Read more about our services</button>
-                </article>
+                    <button aria-label="Read more about our services">Read more about our services</button>
+                </div>
             </div>
         </section>
     </header>
@@ -65,7 +65,7 @@
             <h1>About Our Company</h1>
             <p>Lorem ipsum dolor sit amet, Ut enim ad minim veniam, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <section id="aboutButton">
-                <button>Read More About Us</button>
+                <button aria-label="Read more about us">Read More About Us</button>
             </section>
         </article>
     </section> 
@@ -103,27 +103,32 @@
                 <label for="email">Sign up for our newsletter</label>
                 <form id="emailForm">
                     <input type="email" id="email" name="email" placeholder="Ola@email.com">
-                    <button type="submit">Sign me up!</button>
+                    <button type="submit" aria-label="Sign me up for newsletter">Sign me up!</button>
                 </form>
             </article>
         </section>
     </main>
-
         <footer id="footer">
         <section  id="companyRights">
             <img src="img/logo1.png" alt="Bilde av logo">
             <p>Companyrights Companyname 2023</p>
 
             <section class="footerIcon">
+        <a href="https://www.facebook.com" class="social-icon">
             <i class="fa-brands fa-square-facebook"></i>
-
+        </a>
+        
+        <a href="https://www.instagram.com" class="social-icon">
             <i class="fa-brands fa-square-instagram"></i>
+        </a>
 
+        <a href="https://no.linkedin.com/" class="social-icon">
             <i class="fa-brands fa-linkedin"></i>
+        </a>
         </section>
         </section>
     </footer>
 </div>
-<a id="arrow-up" href="index.html"><i class="fa-solid fa-arrow-up"></i></a>
+<a id="arrow-up" href="index.html" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 </html>

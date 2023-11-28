@@ -17,20 +17,22 @@
     <div id="gridContainer">
 
         <header id="productsHeader">
-            <nav id="navHeader">
+            <nav class="navHeader">
                 <a href="index.html">
                     <img src="img/logo1.png" alt="Logobilde">
                 </a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Portfolio</a></li>
+                    <li><a href="products.html" id="underline">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="about.html">Contact</a></li>
+                    <li><a id="contactNav" href="about.html">Contact</a></li>
                 </ul>
             </nav>
 
             <section id="productHeader">
-                <h1 id="headerTekst">Portfolio</h1>
+            <div class="PortfolioOverlay">
+                <h1>Portfolio</h1>
+            </div>
                 <img src="img/image17002315350.jpg" alt="Bilde av en dame som jobber ved pcen">
             </section>
         </header>
@@ -120,12 +122,17 @@
                 <p>Companyrights Companyname 2023</p>
     
                 <section class="footerIcon">
-                <i class="fa-brands fa-square-facebook"></i>
-    
-                <i class="fa-brands fa-square-instagram"></i>
-    
-                <i class="fa-brands fa-linkedin"></i>
-
+                    <a href="https://www.facebook.com" class="social-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com" class="social-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+            
+                    <a href="https://no.linkedin.com/" class="social-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
             </section>
         </section>
     </footer>
