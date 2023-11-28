@@ -69,11 +69,6 @@ nav ul li {
     font-size: 17px;
 }
 
-#contactNav:hover{
-    background-color: #000000;
-    color: #e6bd43;
-}
-
 #contactNav {
     background-color: #e6bd43;
     color: black;
@@ -137,11 +132,6 @@ nav ul li {
     border: none;
 }
 
-.videoText button:hover{
-    background-color: #000000;
-    color: #e6bd43;
-}
-
 /* Main Index */
 
 #indexMain{
@@ -198,11 +188,6 @@ nav ul li {
     font-weight: bold;
 }
 
-#aboutCompany button:hover{
-    background-color: #000000;
-    color: #e6bd43;
-}
-
 #ourServices{
     text-align: center;
     margin: auto;
@@ -250,11 +235,6 @@ nav ul li {
     border: none;
     font-size: 18px;
     padding: 16.5px;
-}
-
-#emailBox button:hover{
-    background-color: #000000;
-    color: #e6bd43;
 }
 
 form input{
@@ -338,11 +318,6 @@ hr {
     padding: 1rem;
     text-decoration: none;
     color: #000000;
-}
-
-#jobBtn a:hover {
-    background-color: #000000;
-    color: #e6bd43;
 }
 
 #jobBtn ul {
@@ -501,11 +476,6 @@ hr {
     text-align: left;
 }
 
-.contactButton:hover {
-    background-color: #000000;
-    color: #e6bd43;
-}
-
 /* Main */
 
 #aboutMain {
@@ -579,11 +549,6 @@ label {
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 14px;
-}
-
-#submit:hover{
-    background-color: #000000;
-    color: #e6bd43;
 }
 
 #contactInformation {
@@ -943,6 +908,43 @@ label {
         display: flex;
     }
 
+
+    /* Hover-effects */
+
+    #contactNav:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    .videoText button:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #aboutCompany button:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #emailBox button:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #jobBtn a:hover {
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    .contactButton:hover {
+        background-color: #000000;
+        color: #e6bd43;
+    }
+
+    #submit:hover{
+        background-color: #000000;
+        color: #e6bd43;
+    }
     
 }
     
