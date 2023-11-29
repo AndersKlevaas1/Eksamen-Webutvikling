@@ -1,19 +1,17 @@
-*{
+    *{
     font-family: 'Dosis', sans-serif;
-}
+    }
 
-body {
+    body {
     margin: auto;
     padding: 0;
     max-width: 1600px;
-}
+    }
 
-#gridContainer {
+    #gridContainer {
     display: grid;
     grid-template-areas: "header header header" "main main main" "footer footer footer"; 
-
-}
-
+    }
 
 /* Header index */
 
@@ -23,79 +21,76 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
+    }
 
-header a img{
+    header a img{
     width: 150px;
     height: 150px;
     margin-right: auto;
     text-align: center;
-}
+    }
 
-nav ul{
+    nav ul{
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-right: 35px;
-    
-}
+    margin-right: 35px; 
+    }
 
-nav ul li {
+    nav ul li {
     padding: 10px;
-}
+    }
 
-.navHeader{
+    .navHeader{
     display: flex;
     text-align: center;
     background-color: #ffffff;
     overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
-}
+    }
 
-#underline {
+    #underline {
     text-decoration: underline;
     color: #000000;
     text-decoration-color: #e6bd43;
     font-weight: bolder;
+    }
 
-}
-
-.navHeader a{
+    .navHeader a{
     color: #000000;
     text-align: center;
     padding: 14px 16px; 
     text-decoration: none;
     font-size: 17px;
-}
+    }
 
-#contactNav {
+    #contactNav {
     background-color: #e6bd43;
     color: black;
     font-weight: bolder;
-  }
+    }
 
 /* Video */
 
-#headline {
+    #headline {
     width: 100%;
-}
+    }
 
-.videoContainer {
+    .videoContainer {
     position: relative;
     margin-top: 20px; 
-}
+    }
 
-#bgVideo {
+    #bgVideo {
     width: 100%;
     height: 400px;
     object-fit: cover;
     position: relative; 
     display: none;
-}
+    }
 
-
-.videoText {
+    .videoText {
     position: absolute;
     font-size: 18px;
     top: 0%;
@@ -108,56 +103,56 @@ nav ul li {
     max-width: 100%;
     width: 100%;
     height: 100%;
-}
+    }
 
-.videoText p, h1{
+    .videoText p, h1{
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
+    }
 
-.videoText p {
+    .videoText p {
     max-width: 80%;
     margin: auto;
     padding: 1rem;
-    
-}
+    }
 
-.videoText button{
-    width: 200px;
-    height: 50px;
+    .videoText a{
+    color: black;
     background-color: #e6bd43;
-    font-size: 17px;
+    text-decoration: none;
+    padding: 1rem;
+    height: 75px;
+    width: 175px;
+    font-size: 18px;
     font-weight: bold;
-    border: none;
-}
+    }
 
 /* Main Index */
 
-#indexMain{
+    #indexMain{
     display: flex;
     flex-direction: column;
     grid-area: main;
-}
+    }
 
-#subhead{
+    #subhead{
     justify-content: center;
     text-align: center;
     margin: auto;
     max-width: 50%;
+    }
 
-}
-
-#subhead h1{
+    #subhead h1{
     font-size: 32px;
     margin-top: 50px;
-}
+    }
 
-#subhead p {
+    #subhead p {
     font-size: 18px;
-}
+    }
 
-#aboutCompany {
+    #aboutCompany {
     margin: auto;
     margin-top: 50px;
     padding: 3rem;
@@ -165,124 +160,123 @@ nav ul li {
     flex-direction: column;
     text-align: center;
     max-width: fit-content;
-}
+    }
 
-#aboutCompany p{
+    #aboutCompany p{
     margin: auto;
     max-width: 40%;
-}
+    }
 
-#aboutCompany img{
+    #aboutCompany img{
     padding: 2rem;
     max-width: 300px;
     max-height: 300px;
-}
+    }
 
-#aboutCompany button{
-    border: 4px black solid;
-    background-color: #e6bd43;
-    margin-top: 10px;
-    height: 75px;
-    width: 175px;
-    font-size: 18px;
-    font-weight: bold;
-}
+    #aboutButton {
+        margin-top: 30px;
+    }
 
-#ourServices{
+    #aboutButton a{
+        margin: auto;    
+        padding: 1rem;
+        border: 3px solid black;
+        text-decoration: none;
+        color: black;
+    } 
+
+    #ourServices{
     text-align: center;
     margin: auto;
     max-width: fit-content;
-}
+    }
 
-#ourServicesHeader{
+    #ourServicesHeader{
     display: flex;
     padding: 1rem; 
     justify-content: center;
+    }
 
-}
-
-#grayEmail {
+    #grayEmail {
     flex-direction: column;
     text-align: center;
     background-color: #ddd;
     padding-bottom: 75px;
-}
+    }
 
-#emailBox{
+    #emailBox{
     margin-top: 50px;
-    height: 125px;
-    
-}
+    height: 125px; 
+    }
 
-#emailForm{
+    #emailForm{
     gap: 0;
-}
+    }
 
-#email{
+    #email{
     margin-top: 15px;
     font-size: 20px;
     border: none;
     margin-left: 20px;
-}
+    }
 
-#emailBox label{
+    #emailBox label{
     font-size: 32px;
     margin-top: 50px;
-}
+    }
 
-#emailBox button{
+    #emailBox button{
     background-color: #e6bd43;
     border: none;
     font-size: 18px;
     padding: 16.5px;
-}
+    }
 
-form input{
+    form input{
     padding: 7px;
-}
+    }
+
 /* footer index */
 
-#footer{
+    #footer{
     grid-area: footer;
     display: flex;
     flex-direction: column;
-}
-
-
-
+    }
 
 /* Products */
 /* Header */
 
-  .PortfolioOverlay {
+    .PortfolioOverlay {
     position: absolute;
     background-color: rgba(245, 245, 245, 0.4);
     width: 100%;
     height: 100%;
-  }
+    } 
 
-  .PortfolioOverlay h1 {
+    .PortfolioOverlay h1 {
     position: relative;
     top: 5%;
-  }
+    }
 
 /* Product main */
-#productHeader{
+
+    #productHeader{
     grid-area: main;
     position: relative;;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
-}
+    }
 
-#productHeader img {
+    #productHeader img {
     display: block;
     width: 100%;
     height: auto;
-}
+    }
 
-hr {
+    hr {
     height: 2px;
     background-color: #e6bd43;
     border: none;  
@@ -290,64 +284,62 @@ hr {
     width: 60%;
     margin-left: 50px;
     margin-bottom: 40px;
-}
+    }
 
-#productMain h2 {
+    #productMain h2 {
     margin-left: 50px;
-}
+    }
 
-#productMain p {
+    #productMain p {
     margin-left: 50px;
-}
+    }
 
-#jobBtn {
+    #jobBtn {
     display: flex;
     flex-wrap: wrap;
     max-width: 99%;
     overflow: hidden;
-}
+    }
 
-#jobBtn li {
+    #jobBtn li {
     margin: 10px;
-}
+    }
 
-#jobBtn a {
+    #jobBtn a {
     display: flex;
     background-color: white;
     border: 2px black solid;
     padding: 1rem;
     text-decoration: none;
     color: #000000;
-}
+    }
 
-#jobBtn ul {
+    #jobBtn ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-right: 205px;
-    
-}
+    margin-right: 205px;  
+    }
 
-#developmentBtn {
+    #developmentBtn {
     display: flex;
     background-color: white;
     border: 2px black solid;
     padding: 1rem;
     text-decoration: none;
     color: black;
-    max-width: 85px;
-    
-}
+    max-width: 85px;    
+    }
 
-#productImg img {
+    #productImg img {
     max-width: 692px;
     width: 80%;
     margin-left: 50px;
-}
+    }
 
 /* footer */
 
-#companyRights{
+    #companyRights{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -355,34 +347,33 @@ hr {
     color: white;
     text-align: center;
     align-items: center;
-}
+    }
 
-#companyRights p {
+    #companyRights p {
     display: flex;
     align-items: center;
-}
+    }
 
-#companyRights img {
+    #companyRights img {
     display: flex;
     align-items: center;
     text-align: center;
     max-width: 100px;
     max-height: 110px;
     margin-top: 40px;
-}
+    }
 
-
-#footer{
+    #footer{
     grid-area: footer;
     display: flex;
     flex-direction: column;
-}
+    }
 
-#footer p {
+    #footer p {
     flex-direction: column;
-}
+    }
 
-.footerIcon {
+    .footerIcon {
     grid-area: footer;
     display: flex;
     gap: 30px;
@@ -390,14 +381,14 @@ hr {
     text-decoration: none;
     margin-left: 10px;
     padding-bottom: 20px;
-}
+    }
 
-.social-icon{
+    .social-icon{
     color: #fff;
     text-decoration: none;
-}
+    }
 
-#arrow-up {
+    #arrow-up {
     position: fixed;
     bottom: 15px;
     right: 16px;
@@ -406,12 +397,12 @@ hr {
     padding: 10px;
     font-size: 40px;
     background-color: #252525;
-}
+    }
 
 /* About */
 /* Header */
 
-#AboutsHeader {
+    #AboutsHeader {
     grid-area: header;
     position: relative;
     width: 100%;
@@ -422,15 +413,18 @@ hr {
     display: flex;
     justify-content: center;
     background-image: url("../img/image17002315350.jpg");
-}
+    /* Her valgte jeg å bruke "background-image" fra kilden https://developer.mozilla.org/en-US/docs/Web/CSS/background-image 
+    Da den andre løsningen var å bruke <style> i html, noe jeg ikke synes var optimalt.*/
+    }
 
 
-.textOverlay {
+    .textOverlay {
     width: 70%;
-}
+    }
 
-.overlayText {
+    .overlayText {
     background: rgba(245, 245, 245, 0.94);
+    /* https://www.w3schools.com/css/css_image_transparency.asp */
     color: #000000;
     padding: 20px;
     box-sizing: border-box;
@@ -439,31 +433,31 @@ hr {
     margin: 20px auto;
     margin-bottom: 20px;
     text-align: center;
-}
+    }
 
-#companyName {
+    #companyName {
     color: #000000;
     font-size: 18px; 
     font-weight: lighter; 
     margin-bottom: 10px;
     text-align: left;    
-}
+    }
 
-#companyDescription {
+    #companyDescription {
     color: #000000;
     font-size: 24px; 
     font-weight: bold; 
     margin-bottom: 20px;
     text-align: left;
     max-width: 60%;
-}
+    }
 
-.overlayText p {
+    .overlayText p {
     font-size: 1em; 
     margin-bottom: 0; 
-}
+    }
 
-.contactButton {
+    .contactButton {
     display: inline-block;
     background-color: #e6bd43;
     color: #000000;
@@ -474,73 +468,72 @@ hr {
     margin-top: 20px;
     max-width: 100px;
     text-align: left;
-}
+    }
 
 /* Main */
 
-#aboutMain {
+    #aboutMain {
     grid-area: main;
+    }
 
-}
-
-#clients {
+    #clients {
     display: flex;
     flex-direction: column;
     background-color: #e6bd43;
     align-items: center;
     padding: 2rem;
-}
+    }
 
-#clientsLogo{
+    #clientsLogo{
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-}
+    }
 
-#clientsLogo img{
+    #clientsLogo img{
     margin: 9px;
-}
+    }
 
-#contact-Us h2, h3, label, input, textarea {
+    #contact-Us h2, h3, label, input, textarea {
     margin-left: 40px;
-}
+    }
 
-#contact-Us h2{
+    #contact-Us h2{
     text-align: center;
-}
+    }
 
-#contact-Us {
-background-color: #f4f4f4;
-padding-bottom: 10px;
-}
+    #contact-Us {
+    background-color: #f4f4f4;
+    padding-bottom: 10px;
+    }
 
-#contact-Us form {
+    #contact-Us form {
     display: flex;
     flex-direction: column;
     width: 90%;
-}
+    }
 
-form input, textarea {
+    form input, textarea {
     border: none;
     padding: 15px;
-}
+    }
 
-#message {
+    #message {
     margin-bottom: 20px;
-}
+    }
 
-label {
+    label {
     margin-top: 15px;
-}
+    }
 
-#user-name {
+    #user-name {
     margin-top: 0px;
-}
+    }
 
-#submit {
+    #submit {
     display: flex;
     align-items: flex-start;
     max-width: 110px;
@@ -549,77 +542,72 @@ label {
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 14px;
-}
+    }
 
-#contactInformation {
+    #contactInformation {
     margin: 40px;
     display: flex;
     flex-direction: column;
-}
+    }
 
-#contactInformation span {
+    #contactInformation span {
     padding: 10px;
     font-size: 18px;
-}
+    }
 
-#bra-veien {
+    #bra-veien {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+    }
 
-#bra-veien i {
+    #bra-veien i {
     margin-right: 30px;
     font-size: 20px;
     color: #606060;
-}
+    }
 
-#bra-veien span {
+    #bra-veien span {
     margin-left: 5px;
-}
+    }
 
-#telephone {
+    #telephone {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+    }
 
-#telephone i {
+    #telephone i {
     margin-right: 30px;
     font-size: 20px;
     color: #606060;
-}
+    }
 
-#emailInfo {
+    #emailInfo {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 10px;
-}
+    }
 
-#emailInfo i {
+    #emailInfo i {
     margin-right: 30px;
     font-size: 20px;
     color: #606060;
-}
+    }
 
-#googleMaps iframe {
+    #googleMaps iframe {
     width: 100%;
     max-height: 100%;
     height: 300px;
     margin-bottom: 0;
-}
+    }
+
 /* Footer */
 
-
-
-#aboutFooter {
+    #aboutFooter {
     grid-area: footer;
-}
-
-
-
-
+    }
 /* Media for desktop */
 @media screen and (min-width: 600px) {
 
@@ -708,7 +696,6 @@ label {
         max-width: 60%;
         margin: auto;
         padding: 20px;
-        
     }
 
     #bgVideo {
@@ -722,32 +709,39 @@ label {
         text-align: center;
     }
 
+
     #aboutCompanytext{
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    #aboutButton{
+    #aboutButton {
+        margin-top: 30px;
+    }
+
+    #aboutButton a{
         margin: auto;    
         padding: 1rem;
+        border: 3px solid black;
     } 
 
-   .fa-icon {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-   } 
+    #ourServices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        max-width: 1600px; 
+        margin: 0 auto; 
+    }
+    
+    .fa-icon {
+        width: 250px; 
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
-   #ourServices {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    text-align: center;
-    margin: auto;
-
-   }
-
+   
    /* Products */
 
     #headerTekst {
@@ -803,16 +797,12 @@ label {
         width: auto; 
     }
 
-    
     #productHeader img {
         width: 100%;
         height: 320px; 
         object-fit: cover; 
     }
 
-
-    
-    
     #brandingImg :hover,
     #designImg :hover,
     #developmentImg :hover{
@@ -826,8 +816,7 @@ label {
         flex-direction: row;
         width: 100%;
         gap: 30px;
-        margin-bottom: 20px; 
-        
+        margin-bottom: 20px;         
     }
 
     #developmentImg {
@@ -861,6 +850,11 @@ label {
         margin-top: 20px;
         margin-right: 80px;
         font-size: 40px;
+    }
+    
+    .footerIcon :hover{
+        transition: transform 0.5s ease; 
+        transform: scale(1.2)
     }
 
     .social-icon a{
@@ -912,37 +906,37 @@ label {
     /* Hover-effects */
 
     #contactNav:hover{
-        background-color: #000000;
+        background-color: #252525;
         color: #e6bd43;
     }
 
-    .videoText button:hover{
-        background-color: #000000;
+    .videoText a:hover{
+        background-color: #252525;
         color: #e6bd43;
     }
 
-    #aboutCompany button:hover{
-        background-color: #000000;
+    #aboutCompany a:hover{
+        background-color: #252525;
         color: #e6bd43;
     }
 
     #emailBox button:hover{
-        background-color: #000000;
+        background-color: #252525;
         color: #e6bd43;
     }
 
     #jobBtn a:hover {
-        background-color: #000000;
+        background-color: #252525;
         color: #e6bd43;
     }
 
     .contactButton:hover {
-        background-color: #000000;
+        background-color: #252525;
         color: #e6bd43;
     }
 
     #submit:hover{
-        background-color: #000000;
+        background-color: #252525;
         color: #e6bd43;
     }
     

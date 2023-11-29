@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A business for branding, design and wellbeing">
+    <meta name="keywords" content="busniess, design, landingpage, website, who are we">
+    <meta property="og:title" content="Welcomepage">
+    <meta property="og:url" content="URL to website">
+    <meta name="author" content="Anders Klevaas">
+    <!-- Meta-tags for Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="URL to Image">
+    <meta property="og:image:alt" content="Image text">
+    <meta property="og:site_name" content="Website name">
+    <!-- Meta-tags for Instagram -->
+    <meta property="og:instagram:username" content="@Website-Instagram">
+    <meta property="og:instagram:url" content="https://www.instagram.com/Website-Instagram/">
+    <!-- Link-rel -->
     <link rel="stylesheet" href="styling/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +24,7 @@
     <link rel="stylesheet" href="icons/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="icons/fontawesome-free-6.4.2-web/css/brands.css">
     <link rel="stylesheet" href="icons/fontawesome-free-6.4.2-web/css/solid.css">
+    <link rel="icon" href="img/icons8-favicon-ios-16-32.png" type="image/favion">
     <title>Welcome page</title>
 </head>
 
@@ -17,7 +32,7 @@
     <div id="gridContainer">
 
     <header id="indexHeader">
-        <nav class="navHeader">
+        <nav class="navHeader" aria-label="Main navigation">
             <a href="index.html" aria-label="Home">
                 <img src="img/logo1.png" alt="Logopicture" aria-label="Picture of the websites logo">
             </a>
@@ -25,7 +40,7 @@
                 <li><a href="index.html" id="underline" aria-label="Home">Home</a></li>
                 <li><a href="products.html" aria-label="Portfolio">Portfolio</a></li>
                 <li><a href="about.html" aria-label="About">About</a></li>
-                <li><a id="contactNav" href="about.html" aria-label="Contact">Contact</a></li>
+                <li><a id="contactNav" href="about.html#contact-Us" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
         
@@ -39,9 +54,9 @@
                 </video>
     
                 <div class="videoText">
-                    <h1>Compeling Headline</h1>
+                    <h1 aria-label="Compeling Headline">Compeling Headline</h1>
                     <p>Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis noDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
-                    <button aria-label="Read more about our services">Read more about our services</button>
+                    <a href="#ourServices" aria-label="Read more about our services">Read more about our services</a>
                 </div>
             </div>
         </section>
@@ -51,56 +66,57 @@
     <main id="indexMain">
         <section id="subhead">
             <article>
-                <h2>Engaging Subheading. What can you help our visitors with</h2>
+                <h2 aria-label="Engaging subheading">Engaging Subheading. What can you help our visitors with</h2>
                 <p>Lorem ipsum dolor sit amet, Ut enim ad minim veniam, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </article>
         </section>
 
         
-    <section id="aboutCompany">
+    <section id="aboutCompany" itemscope itemtype="http://schema.org/Organization">
         <section id="aboutCompanyimg">
-            <img src="https://placehold.co/400x400" alt="placeholder 400x400">
+            <img src="https://placehold.co/400x400" alt="placeholder 400x400" itemprop="image">
         </section>
 
-        <article id="aboutCompanytext">
-            <h2>About Our Company</h2>
+        <article id="aboutCompanytext" itemprop="description">
+            <h2 itemprop="founder" aria-label="About Our Company">About Our Company</h2>
             <p>Lorem ipsum dolor sit amet, Ut enim ad minim veniam, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <section id="aboutButton">
-                <button aria-label="Read more about us">Read More About Us</button>
+                <a href="about.html" aria-label="Read more about us">Read More About Us</a>
             </section>
         </article>
     </section> 
     
+    
         <h2 id="ourServicesHeader">Our services</h2>
-        <section id="ourServices">
-            <section class="fa-icon" aria-label="Branding">
+        <section id="ourServices" itemscope itemtype="http://schema.org/Service">
+            <section class="fa-icon" aria-label="Branding" itemprop="serviceType">
                 <i class="fa-solid fa-users fa-2xl"></i>
-                <h2>Branding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                <h2 itemprop="brand" aria-label="Branding">Branding</h2>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </section>
 
-            <section class="fa-icon" aria-label="Branding">
+            <section class="fa-icon" aria-label="Branding" itemprop="serviceType">
                 <i class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
-                <h2>Branding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                <h2 itemprop="brand" aria-label="Branding">Branding</h2>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </section>
 
-            <section class="fa-icon" aria-label="Branding">
+            <section class="fa-icon" aria-label="Branding" itemprop="serviceType">
                 <i class="fa-solid fa-code fa-2xl"></i>
-                <h2>Branding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                <h2 itemprop="brand" aria-label="Branding">Branding</h2>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </section>
 
-            <section class="fa-icon" aria-label="Branding">
+            <section class="fa-icon" aria-label="Branding" itemprop="serviceType">
                 <i class="fa-solid fa-wifi fa-2xl"></i>
-                <h2>Branding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                <h2 itemprop="brand" aria-label="Branding">Branding</h2>
+                <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </section>
         </section>
 
         <section id="grayEmail">
             <article id="emailBox">
-                <h2>Want to recieve news?</h2> 
+                <h2 aria-label="Want To recieve news">Want to recieve news?</h2> 
                 <label for="email" aria-label="Sign up for our newsletter">Sign up for our newsletter</label>
                 <form id="emailForm">
                     <input type="email" id="email" name="email" placeholder="Ola@email.com" aria-label="Insert email">
@@ -110,20 +126,20 @@
         </section>
     </main>
         <footer id="footer">
-        <section  id="companyRights">
-            <img src="img/logo1.png" alt="Picture of logo">
+        <section id="companyRights" itemscope itemtype="https://schema.org/SocialMediaPosting">
+            <img itemprop="image" src="img/logo1.png" alt="Picture of logo">
             <p>Companyrights Companyname 2023</p>
 
             <section class="footerIcon" aria-label="Social Medias">
-        <a href="https://www.facebook.com" class="social-icon">
+        <a itemprop="https://www.facebook.com" href="https://www.facebook.com" class="social-icon">
             <i class="fa-brands fa-square-facebook"></i>
         </a>
         
-        <a href="https://www.instagram.com" class="social-icon">
+        <a itemprop="https://www.instagram.com" href="https://www.instagram.com" class="social-icon">
             <i class="fa-brands fa-square-instagram"></i>
         </a>
 
-        <a href="https://no.linkedin.com/" class="social-icon">
+        <a itemprop="https://no.linkedin.com/" href="https://no.linkedin.com/" class="social-icon">
             <i class="fa-brands fa-linkedin"></i>
         </a>
         </section>

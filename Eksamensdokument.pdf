@@ -1,6 +1,10 @@
 # Eksamen-Webutvikling
  Repo for eksamen i webutivkling
 
+# Karakter
+Jeg har valgt å gå for A krav, men da jeg ikke rakk Flex-wrap/growth, har jeg landet på B-kravet
+
+
 # Kilder
 Navigasjons-kilde: https://www.w3schools.com/howto/howto_js_topnav.asp
 
@@ -10,7 +14,9 @@ Bilde i header: https://pixabay.com/no/photos/student-%C3%A5-skrive-tastatur-tek
 
 Nettside for å lage grayscale effekten: https://www.grayscaleimage.com/#downloadtool
 
-Transform translate: https://www.w3schools.com/css/css3_2dtransforms.asp
+Transparency bak teksten over bildene: https://www.w3schools.com/css/css_image_transparency.asp
+
+Transform: https://www.w3schools.com/css/css3_2dtransforms.asp / https://www.w3schools.com/css/css3_2dtransforms.asp
 
 Hover-effekt på bilder: https://codepen.io/nxworld/pen/ZYNOBZ
 
@@ -18,8 +24,28 @@ Hover-effekt på bilder: https://codepen.io/nxworld/pen/ZYNOBZ
 
 Form - label: https://www.w3schools.com/tags/tag_label.asp / https://www.w3schools.com/tags/tag_textarea.asp
 
+Text-area: https://www.w3schools.com/tags/tag_textarea.asp
+
 flex-grow: https://www.w3schools.com/cssref/css3_pr_flex-grow.php / https://stackoverflow.com/questions/19574851/how-to-specify-an-element-after-which-to-wrap-in-css-flexbox
 
 text-decoration color: https://www.w3schools.com/cssref/css3_pr_text-decoration-color.php
+
+map-tag (iframe): https://www.w3schools.com/html/html_iframe.asp 
+
+Aria-Label: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label
+
+Schema: https://schema.org/Service / https://schema.org/Product / https://schema.org/ItemList / https://schema.org/PostalAddress 
+
+Favicon: https://www.w3schools.com/html/html_favicon.asp
+
+Inspirasjon til Media Queries px-verdiene har jeg hentet fra min egen Oblig 4
+
+
+
+
+# Redegjøre
+Jeg rakk ikke gjøre flex-wrap og flex-growth på bildene på Portfolio-siden.
+
+
 
 

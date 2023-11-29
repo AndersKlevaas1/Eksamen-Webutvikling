@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A busniess for branding, design and wellbeing">
+    <meta name="keywords" content="busniess, design, contact, products, jobs, development">
+    <meta property="og:title" content="What can we offer?">
+    <meta property="og:url" content="URL to website">
+    <meta name="author" content="Anders Klevaas">
+    <!-- Meta-tags for Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="URL to Image">
+    <meta property="og:image:alt" content="Image text">
+    <meta property="og:site_name" content="Website name">
+    <!-- Meta-tags for Instagram -->
+    <meta property="og:instagram:username" content="@Website-Instagram">
+    <meta property="og:instagram:url" content="https://www.instagram.com/Website-Instagram/">
+    <!-- Link-rel -->
     <link rel="stylesheet" href="styling/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,109 +24,173 @@
     <link rel="stylesheet" href="icons/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="icons/fontawesome-free-6.4.2-web/css/brands.css">
     <link rel="stylesheet" href="icons/fontawesome-free-6.4.2-web/css/solid.css">
-    <title>Products</title>
+    <link rel="icon" href="img/icons8-favicon-ios-16-32.png" type="image/favion">
+    <title>Portfolio</title>
 </head>
 
 <body>
     <div id="gridContainer">
 
         <header id="productsHeader">
-            <nav class="navHeader">
-                <a href="index.html">
-                    <img src="img/logo1.png" alt="Logobilde">
+            <nav class="navHeader" aria-label="Main navigation">
+                <a href="index.html" aria-label="Home">
+                    <img src="img/logo1.png" alt="Logobilde" aria-label="Picture of the websites logo">
                 </a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" id="underline">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a id="contactNav" href="about.html">Contact</a></li>
+                    <li><a href="index.html" aria-label="home">Home</a></li>
+                    <li><a href="products.html" id="underline" aria-label="Portfolio">Portfolio</a></li>
+                    <li><a href="about.html" aria-label="About">About</a></li>
+                    <li><a id="contactNav" href="about.html#contact-Us" aria-label="Contact">Contact</a></li>
                 </ul>
             </nav>
 
             <section id="productHeader">
             <div class="PortfolioOverlay">
-                <h1>Portfolio</h1>
+                <h1 aria-label="Portfolio">Portfolio</h1>
             </div>
-                <img src="img/image17002315350.jpg" alt="Bilde av en dame som jobber ved pcen">
+                <img src="img/image17002315350.jpg" alt="Picture taken from above of a woman working on the computer" aria-label="Picture taken from above of a woman working on the computer">
             </section>
         </header>
 
-        <main id="productMain">
-            <h2>Explore previous jobs</h2>
+    <main id="productMain">
+            <h2 aria-label="Explore previous jobs">Explore previous jobs</h2>
 
             <hr id="hrExplore">
 
             <section id="jobBtn">
-                    <ul>
-                        <li><a href="#Branding">Branding</a></li>
-                        <li><a href="#Design">Design</a></li>
-                        <li><a href="#Development" id="developmentBtn">Development</a></li>
+                    <ul aria-label="Explore our different jobs">
+                        <li><a href="#Branding" aria-label="Our branding">Branding</a></li>
+                        <li><a href="#Design" aria-label="Our design">Design</a></li>
+                        <li><a href="#Development" id="developmentBtn" aria-label="Our development">Development</a></li>
                     </ul>
                 </section>  
-            <h2 id="Branding">Branding</h2>
+            <h2 id="Branding" aria-label="Branding">Branding</h2>
 
             <hr>
 
-    <section id="productImg">
+    <section id="productImg" >
         <section id="brandingImg">
-            <section>
-                <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+                <meta itemprop="name" content="Product name">
+                <meta itemprop="description" content="Product Description">
+                <meta itemprop="url" content="URL to the product">
                 <p>Et har quiduem</p>
+                <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="5">
+                    <meta itemprop="reviewCount" content="1">
+                </span>
             </section>
 
-            <section>
-                <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+                <meta itemprop="name" content="Product name">
+                <meta itemprop="description" content="Product Description">
+                <meta itemprop="url" content="URL to the product">
                 <p>Et har quiduem</p>
+                <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="5">
+                    <meta itemprop="reviewCount" content="1">
+                </span>
             </section>
 
-            <section>
-                <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+                <meta itemprop="name" content="Product name">
+                <meta itemprop="description" content="Product Description">
+                <meta itemprop="url" content="URL to the product">
                 <p>Et har quiduem</p>
+                <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="5">
+                    <meta itemprop="reviewCount" content="1">
+                </span>
             </section>
         </section>
         
     <section id="bigPicture">
-        <section id="bilde1">
-            <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+        <section id="bilde1" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <meta itemprop="name" content="Product name">
+            <meta itemprop="description" content="Product Description">
+            <meta itemprop="url" content="URL to the product">
             <p>Et har quiduem</p>
+            <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                <meta itemprop="ratingValue" content="5">
+                <meta itemprop="reviewCount" content="1">
+            </span>
         </section>
     </section>
 
-        <h2 id="Design">Design</h2>
+        <h2 id="Design" aria-label="Design">Design</h2>
 
         <hr>
         <section id="designImg">
-            <section>
-                <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+                <meta itemprop="name" content="Product name">
+                <meta itemprop="description" content="Product Description">
+                <meta itemprop="url" content="URL to the product">
                 <p>Et har quiduem</p>
+                <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="5">
+                    <meta itemprop="reviewCount" content="1">
+                </span>
             </section>
 
-            <section>
-                <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+                <meta itemprop="name" content="Product name">
+                <meta itemprop="description" content="Product Description">
+                <meta itemprop="url" content="URL to the product">
                 <p>Et har quiduem</p>
+                <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="4.5">
+                    <meta itemprop="reviewCount" content="1">
+                </span>
             </section>
 
-            <section>
-                <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <section itemscope itemtype="http://schema.org/Product">
+                <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+                <meta itemprop="name" content="Product name">
+                <meta itemprop="description" content="Product Description">
+                <meta itemprop="url" content="URL to the product">
                 <p>Et har quiduem</p>
+                <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <meta itemprop="ratingValue" content="5">
+                    <meta itemprop="reviewCount" content="1">
+                </span>
             </section>
         </section>
-        <h2 id="Development">Development</h2>
+        <h2 id="Development" aria-label="Development">Development</h2>
 
         <hr>
      <section id="developmentImg">
-        <section>
-            <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+        <section itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <meta itemprop="name" content="Product name">
+            <meta itemprop="description" content="Product Description">
+            <meta itemprop="url" content="URL to the product">
             <p>Et har quiduem</p>
+            <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                <meta itemprop="ratingValue" content="5">
+                <meta itemprop="reviewCount" content="1">
+            </span>
         </section>
 
-        <section>
-            <img src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+        <section itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" src="img/Skjermbilde-2023-11-16-175407.png" alt="Placeholder 400x400">
+            <meta itemprop="name" content="Product name">
+            <meta itemprop="description" content="Product Description">
+            <meta itemprop="url" content="URL to the product">
             <p>Et har quiduem</p>
+            <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                <meta itemprop="ratingValue" content="5">
+                <meta itemprop="reviewCount" content="1">
+            </span>
         </section>
-     </section>
-    </section>
-        </main>
+        </section>
+        </section>
+    </main>
     
     
 
