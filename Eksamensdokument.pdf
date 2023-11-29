@@ -2,7 +2,7 @@
  Repo for eksamen i webutivkling
 
 # Karakter
-Jeg har valgt å gå for A krav, men da jeg ikke rakk Flex-wrap/growth, har jeg landet på B-kravet
+Jeg har valgt å gå for A krav
 
 
 # Kilder
@@ -38,9 +38,9 @@ Schema: https://schema.org/Service / https://schema.org/Product / https://schema
 
 Favicon: https://www.w3schools.com/html/html_favicon.asp
 
+Hjelp til meta i head: Tidligere oblig 3 i webutvikling
+
 Inspirasjon til Media Queries px-verdiene har jeg hentet fra min egen Oblig 4
-
-
 
 
 # Redegjøre
